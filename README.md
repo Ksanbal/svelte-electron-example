@@ -1,6 +1,6 @@
 # Svelte + Electron Example📷
 
-## install
+## Install
 
 ```shell
 yarn
