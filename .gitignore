@@ -1,0 +1,10 @@
+/node_modules/
+/public/build/
+
+.DS_Store
+.vscode
+
+/render_build/
+/main_build/
+
+dist/
