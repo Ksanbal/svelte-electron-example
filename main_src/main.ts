@@ -8,7 +8,7 @@ Menu.setApplicationMenu(menu);
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 1080,
+    width: 1080 / 2,
     height: 1920 / 2,
     fullscreen: !isDEV,
   });
@@ -17,7 +17,7 @@ function createWindow() {
       ? "http://localhost:8080"
       : `file://${path.join(__dirname, "../render_build/index.html")}`
   );
-  mainWindow.webContents.openDevTools();
+  mainWindow.webContents.openDevTools({ mode: "detach" });
 }
 
 app.whenReady().then(() => {
