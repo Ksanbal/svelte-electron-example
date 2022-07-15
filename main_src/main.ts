@@ -3,6 +3,9 @@ import * as path from "path";
 import * as isDEV from "electron-is-dev";
 import { menu } from "./menu";
 
+// 상단 메뉴바 설정
+Menu.setApplicationMenu(menu);
+
 function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 1080,
