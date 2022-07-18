@@ -11,6 +11,9 @@ function createWindow() {
     width: 1080 / 2,
     height: 1920 / 2,
     fullscreen: !isDEV,
+    webPreferences: {
+      nodeIntegration: true,
+    },
   });
   mainWindow.loadURL(
     isDEV
